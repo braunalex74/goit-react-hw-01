@@ -1,3 +1,6 @@
+import { PageTitle } from './PageTitle/PageTitle';
+import { EventBoard } from './EventBoard/EventBoard';
+
 export const App = () => {
   return (
     <div
@@ -7,10 +10,11 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <PageTitle tetx="24th Core Worlds Coalition Conference" />
+      <EventBoard />
     </div>
   );
 };
